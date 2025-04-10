@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techskool Website Bootstrap</title>
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- <link rel="stylesheet" href="bootstrap.min (1).css"> -->
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .bc{
+        color: rgb(33, 33, 73);
+    }
+    .pc{
+      color: rgb(43, 33, 73);
+    }
+    .h:hover{
+        background-color: rgb(33, 33, 73);
+        border: transparent;
+        height: 38px;
+    }
+    .hi{
+      border: 1px solid rgb(33, 33, 73);
+      color: rgb(33, 33, 73);
+      font-weight: 400;
+    }
+    .nav-item.dropdown:hover .dropdown-menu{
+        display: block;
+    }
+    .size{
+      max-width: 450px;
+      min-width: 20px;
+      height:70vh;
+    }
+    .link{
+      text-decoration: none;
+      word-spacing: 2px;
+    }
+    .over{
+      overflow-y: auto;
+      max-width: 40vw;
+      min-width: 320px;
+    }
+    .link:hover{
+      color: red;
+      transition: ease 0.5s;
+    }
+  </style>
+</head>
+<body>
+
+  <!---Nav bar-->
+
+  <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary ">
+    <div class="container-lg">
+      <a class="navbar-brand" href="#"><img src="./IMG/Tech-Skool-Education-Colored-Logo.webp" alt="" class="img-fluid" style="max-width: 150px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+         <ul class="navbar-nav mb-2 mb-lg-0">
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="#intro fw-bold">Home</a>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="#">Action</a></li>
+               <li><a class="dropdown-item" href="#">Another action</a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="#">Something else here</a></li>
+             </ul>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 School
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="#">Action</a></li>
+               <li><a class="dropdown-item" href="#">Another action</a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="#">Something else here</a></li>
+             </ul>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Programs
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="#">Action</a></li>
+               <li><a class="dropdown-item" href="#">Another action</a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="#">Something else here</a></li>
+             </ul>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link fw-bold" href="#">Contact</a>
+           </li>
+         </ul>
+         <a href="#" class="btn btn-danger lg h fw-bolder p-2">Enroll Now</a>
+        </div>
+    </div>
+  </nav>
+
+
+    <!---Intro-->
+  <section id="intro">
+    <div class="container-fluid my-5 pt-5">
+      <div class="row justify-content-around">
+        <div class="col-lg-6 col-md-6">
+          <div class=" text-center ">
+            <h1 class="display-1 fw-bolder bc">Welcome To Tech Skool.</h1>
+
+            <p class="lead text-muted my-4">Tech Skool Education is raising and positioning the next generation of tech talents leaders and industry captains for Africa and beyond through institutionalized learning experiences for Kids, Teens, and Young Adults. Welcome, keep exploring</p>
+
+            <div class="row justify-content-center">
+              <div class="col-md-8 col-lg-5">
+                <a href="#" class="btn btn-danger m-1 m-md-0 h fw-bold">About Tech Skool</a>
+              </div>
+              <div class="col-md-2 col-lg-5">
+                <a href="#" class="btn btn-outline-primary m-1 m-md-0 hi h rounded-1 fw-bolder">Enroll Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 " >
+          <div class="d-none d-md-block">
+            <img class="size" src="./IMG/Tech-Skool-Illustrations-4.png" alt="techskool" >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container-fluid mt-md-5 mt-lg-5 pt-md-3">
+      <div class="justify-content-center py-3">
+        <div class="row justify-content-center">
+          <div class="col-9 col-md-9 ">
+            <div class="text-center bc">
+              <h2 class="display-2 fw-bold">Our Schools</h2>
+              <p class="lead pc">Tech Skool Edu is an online school of Technology and Entrepreneurship education segmented for different ages and needs. Select the school that best suits your needs to get started.</p>
+            </div>
+          
+            <div class="d-flex justify-content-center">
+              <a href="#" class="btn btn-danger m-1 h">Explore schools</a>
+              <a href="#" class="btn btn-primary m-1 h">Faculties</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row justify-content-center my-3 ">
+          <div class="col-12 col-sm-8 my-2 col-md-6 over">
+            <div class="div border shadow-sm
+            lg rounded-1 p-2 text-start">
+              <div class="rounded-pill bg-danger text-white w-50 text-center h6 py-1"> IN SESSION</div>
+              <h1 class="bc fw-bold">For Kids & Teens (7+)</h1>
+              <p class="text-muted lead">Our K12 school provides a safe online environment for kids and teens aged 7-17 years to explore technology and entrepreneurship courses with K12 – adapted strategies.</p>
+              <a href="#"  class="bc link h4">Enroll Learner <i class="bi bi-arrow-up-right " style="font-size: 20px;"></i></a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-8 my-2 col-md-6 over">
+            <div class="div border shadow-sm rounded-1 p-2 text-start">
+              <div class="rounded-pill bg-danger text-white w-50 text-center h6 py-1"> COMING SOON</div>
+              <h1 class="bc fw-bold">For Adults (18+)</h1>
+              <p class="text-muted lead">We offer self-paced learning experiences designed for those over 18 years old to learn tech and entrepreneurship courses. Starting April 2025. Stay tuned</p>
+
+              <a href="#"  class="bc link h4">Join Waitlist
+                <i class="bi bi-arrow-up-right " style="font-size: 20px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Programs---->
+
+  <section>
+    <div class="container-fluid mt-md-5 mt-lg-5 pt-md-3">
+      <div class="justify-content-center py-3">
+          <div class="row justify-content-center">
+            <div class="col-9 col-md-9 ">
+              <div class="text-center bc">
+                <h1 class="display-5 fw-bold">Featured Programs</h1>
+
+                <p class="lead pc">Join us throughout the year for exciting opportunities for both learners and parents. See below for more details.</p>
+              </div>
+            
+          </div>
+          
+          <div class="row justify-content-center m-5 ">
+            <div class="border shadow-smrounded-1 p-2 px-4 text-start col-12 col-sm-9 my-2 col-md-6 over">
+              <h1 class="bc fw-bold h2">Parents Virtual Summit ’25</h1>
+
+              <p class="text-muted lead">An annual summit designed to educate parents on the role of tech and entrepreneurship education for their children’s future success and provide them with the tools and resources they need to support their children’s learning. Learn more.</p>
+
+              <div class="d-flex">
+                <a href="#" class="btn btn-danger p-1">Learn More</a>
+                <a href="#" class="mx-2 mt-1 bc link h6">23 Highlights <i class="bi bi-play-circle-fill"></i></a>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-8 my-2 col-md-6 over border shadow-sm rounded-1 p-2 text-start">
+              <h1 class="bc fw-bold h2">Tech Summer ’25</h1>
+
+              <p class="text-muted lead">Tech Summer is an annual camp for kids and teens, designed as a project-based program for kids and teens to develop relatable Tech skills. The next version starts on 28th July 2025. Watch highlights and visit the page to enroll.</p>
+
+              <div class="d-flex">
+                <a href="#" class="btn btn-danger p-1">Learn More</a>
+                <a href="#" class="mx-2 mt-1 bc link h6"> Highlights <i class="bi bi-play-circle-fill"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!---Team---->
+
+  <section>
+    <div class="container-fluid mt-4 p-3">
+      <div class="text-center">
+        <h2 class="fw-bold bc h1 mb-2">Join our Team</h2>
+        <a href="#" class="btn btn-danger mt-4 p-2 px-4 lead fw-bold">Apply Here</a>
+      </div>
+
+      <div class="row row-cols-3 justify-content-center px-1 px-md-4">
+        <div class="col-md-4 col-12">
+          <div class="p-3 m-3 text-center shadow-sm">
+            <img src="./IMG/Coaches icon.png" alt="#">
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="p-4 m-3  px-5 text-center shadow-sm">
+            <img src="./IMG/Support Officers icon.png" alt="#">
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="p-4 m-3 text-center shadow-sm">
+            <img src="./IMG/Course Developers icon.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="p-4 m-3 text-center shadow-sm">
+            <img src="/IMG/Support Officers icon.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="p-4 m-3 text-center shadow-sm">
+            <img src="./IMG/Digital Marketers icon.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="p-4 m-3 text-center shadow-sm">
+            <img src="./IMG/interns icon.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container-fluid mt-4 ">
+      <div class="justify-content-center text-center my-4 mb-5">
+        <h1 class="bc ">Reviews & Highlights</h1>
+        <p class="p lead">Watch What Parents Are Saying About Techskool</p>
+
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/0hNo7xrQ6YA" title="Tech Summer Highlights and Reviews" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen  style=" min-width: 40vw; min-height: 30vh; max-width: 80vw; max-height: 50vh; height: 20pc;"></iframe>
+      </div>
+    </div>
+  </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+    "></script>
+</body>
+</html>
