@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Tech Skool</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,24 +18,20 @@
 
         /* About Section */
         .about-section {
-            display: flex;
-            align-items: center;
-            justify-content: center; /* Centers the section horizontally */
             margin-top: 100px;
             padding: 20px;
         }
 
         .about-text {
-            flex: 1;
             text-transform: uppercase;
-            font-size: 36px;
+            font-size: 2rem;
             font-weight: bold;
             color: #0044cc;
         }
 
-        .about-image {
-            flex: 1;
-            text-align: right;
+        .about-description {
+            font-size: 1.2rem;
+            margin-top: 10px;
         }
 
         .about-image img {
@@ -41,26 +40,74 @@
             border-radius: 8px;
         }
 
-        .plain-section {
-            margin-top: 50px; 
-            font-size: 24px; 
-            font-weight: normal;
-            color: #333;
+        /* Boxes Styling */
+        .box {
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #0044cc;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .mission-header {
+            color: #0044cc;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .icon {
+            font-size: 40px;
+            color: #0044cc;
         }
     </style>
 </head>
 <body>
-    <section class="about-section">
-        <div class="about-text">
-            ABOUT TECH SKOOL EDUCATION
-        </div>
-        <div class="about-image">
-            <img src="https://techskool.eskoolnow.com/wp-content/uploads/2022/03/Tech-Skool-Illustrations-2-1024x683.png" alt="Tech Skool Illustration">
+    <section class="about-section container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="about-text">ABOUT TECH SKOOL EDUCATION</div>
+                <div class="about-description">
+                    Tech Skool Educational Institution is an institute of Technology and Entrepreneurship education designed to provide wholesome learning experiences for learners of different age groups, providing entry-level to professional-level education and experience in Technology and entrepreneurship skills.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="https://techskool.eskoolnow.com/wp-content/uploads/2022/03/Tech-Skool-Illustrations-2-1024x683.png"width="660px" alt="Tech Skool Illustration">
+            </div>
         </div>
     </section>
 
-    <section class="plain-section">
-        Tech Skool Educational Institution is an institute of Technology and Entrepreneurship education designed to provide wholesome learning experiences for learners of different age groups, providing entry-level to professional-level education and experience in Technology and entrepreneurship skills.
+    <!-- Three Boxes Side by Side -->
+    <section class="box-container container mt-5">
+        <div class="row text-center">
+            <div class="col-md-4 mb-3">
+                <div class="box">
+                    <div class="icon"><i class="bi bi-airplane"></i></div>
+                    <div class="mission-header">MISSION</div>
+                    <p>To deliver sustainable technology and entrepreneurship education, positioning the learners for global economic impact.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="box">
+                    <div class="icon"><i class="bi bi-lightbulb"></i></div>
+                    <div class="mission-header">VISION</div>
+                    <p>Creating a future driven by innovation, creativity, and empowered learners through technology and entrepreneurship.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="box">
+                    <div class="icon"><i class="bi bi-people"></i></div>
+                    <div class="mission-header">VALUES</div>
+                    <p>Commitment to excellence, collaboration, and inclusivity for impactful education globally.</p>
+                </div>
+            </div>
+        </div>
     </section>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
