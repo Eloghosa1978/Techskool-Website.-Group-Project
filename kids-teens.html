@@ -8,10 +8,29 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <style>
       .big {
         font-size: 45px;
+      }
+      .dropped:hover .droppee {
+        display: block;
+      }
+      .comp a:hover {
+        color: red;
+        transition: ease-in-out 0.3s;
+      }
+      .dropped a:hover {
+        color: red;
+        transition: ease-in-out 0.3s;
+      }
+      .tether {
+        background-color: red;
+        color: white;
+        padding: 10px;
       }
       #uno {
         color: #242f58;
@@ -21,35 +40,162 @@
         color: gray;
         font-weight: 700;
       }
-      .vem{
+      .vem {
         background-color: #242f58;
         color: white;
       }
-      .vem:hover{
+      .vem:hover {
         background-color: #575c6d;
         transition: ease-in-out 0.2s;
         color: white;
       }
-      .prom:hover{
+      .inc {
+        font-size: 23px;
+      }
+      .prom:hover {
         background-color: rgb(230, 227, 60);
         transition: ease-in-out 0.2s;
         color: white;
         border: rgb(230, 227, 60);
       }
-      #volume{
+      #volume {
         color: #242f58;
         text-decoration: none;
       }
-      .vero{
-        background: url(./from.jpg)  center center;
+      #nope {
+        color: white;
+        background-color: #242f58;
+        border: 1px solid #242f58;
+        padding: 6px;
+        border-radius: 2px;
+      }
+      .formal {
+        color: #242f58;
+        font-size: 40px;
+      }
+      .vero {
+        background-color: ghostwhite;
+      }
+      .frop {
+        font-size: 16px;
+      }
+      .flora {
+        color: #242f58;
+      }
+      .red {
+        color: red;
+        font-size: 12px;
+      }
+      .reach {
+        color: #242f58;
+        font-weight: 700;
+      }
+      .hic:hover {
+        border: 1px solid grey;
+        transition: ease-out 0.3s;
       }
     </style>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+      <div class="container-lg">
+        <a class="navbar-brand" href="./index.html"
+          ><img
+            src="./IMG/Tech-Skool-Education-Colored-Logo.webp"
+            alt=""
+            class="img-fluid"
+            style="max-width: 150px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item comp">
+              <a class="nav-link flora" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropped dropdown">
+              <a
+                class="nav-link dropdown-toggle flora"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About
+              </a>
+              <ul class="dropdown-menu droppee">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropped dropdown">
+              <a
+                class="nav-link dropdown-toggle flora"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                School
+              </a>
+              <ul class="dropdown-menu droppee">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown dropped">
+              <a
+                class="nav-link dropdown-toggle flora"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Programs
+              </a>
+              <ul class="dropdown-menu droppee">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item comp">
+              <a class="nav-link flora" href="#">Contact</a>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-danger frop p-2">Enroll Now</a>
+        </div>
+      </div>
+    </nav>
     <section class="my-5">
-      <div class="container-lg vero">
+      <div class="container-lg p-4 vero">
         <div class="row justify-content-center align-items-center">
-          <div class="col-md-6 text-sm-center">
+          <div class="col-md-6 text-sm-center text-md-start">
             <h1 class="big">
               <span id="uno">Tech Skool</span>
               <span id="dos">For Kids & Teens</span>
@@ -62,13 +208,242 @@
               industry captains.
             </p>
             <div>
-                <button class="btn prom btn-danger">Enroll Now </button>
-                <button class="btn vem">Contact <i class="bi bi-whatsapp"></i></button>
-                <a id="volume" href="#">Watch Video <i class="bi bi-play-circle"></i></a>
+              <button class="btn prom btn-danger">Enroll Now</button>
+              <button class="btn vem">
+                Contact <i class="bi bi-whatsapp"></i>
+              </button>
+              <a id="volume" href="#"
+                >Watch Video <i class="bi bi-play-circle"></i
+              ></a>
             </div>
           </div>
           <div class="col-md-6 d-none d-md-block">
-            <img src="" alt="kid" class="img-fluid">
+            <img src="./IMG/Boy.png" alt="kid" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="my-5">
+      <div class="container-lg">
+        <div class="text-center">
+          <p class="red">FOR KIDS AND TEENS</p>
+          <h2 class="reach big">Prepare Them For The Future</h2>
+          <p>
+            Tech Skool helps kids and teens develop in-demand Technology and
+            Business skills from the basics to applied learning outcomes. We
+            offer applicable real-world courses, and through junior internships,
+            we provide entry-level to professional-level work experience for our
+            learners, positioning them for a winning future.
+          </p>
+          <button id="nope">Watch Project Presentations</button>
+        </div>
+        <div class="row my-5 justify-content-center align-items-center">
+          <div class="col-md-4">
+            <div class="card hic">
+              <div class="card-body">
+                <h5 class="card-title flora fw-bold">
+                  <span class="badge tether"
+                    ><i class="bi bi-person-circle"></i
+                  ></span>
+                  Who Can Enroll
+                </h5>
+                <p class="card-text">
+                  Admissions is open for Kids and Teens within 7-17 Years. If
+                  the live class schedules are favorable you can join from any
+                  part of the world.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card hic">
+              <div class="card-body">
+                <h5 class="card-title flora fw-bold">
+                  <span class="badge tether"
+                    ><i class="bi bi-clock-fill"></i
+                  ></span>
+                  Learning Schedule
+                </h5>
+                <p class="card-text">
+                  Learning is self-paced & monitored. Learners get video-based
+                  lessons during weekdays and a compulsory Live class on
+                  Saturdays.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card hic">
+              <div class="card-body">
+                <h5 class="card-title flora fw-bold">
+                  <span class="badge tether"
+                    ><i class="bi bi-shield-shaded"></i
+                  ></span>
+                  Classroom Style
+                </h5>
+                <p class="card-text">
+                  We designed a safe and interactive online classroom and campus
+                  for our learners to explore, learn, and collaborate from
+                  anywhere.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="my-5">
+      <div class="contaner-lg">
+        <div class="row justify-content-around align-items-center">
+          <div class="col-md-4">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleFade"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleFade"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleFade"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleFade"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleFade"
+                  data-bs-slide-to="4"
+                  aria-label="Slide 5"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleFade"
+                  data-bs-slide-to="5"
+                  aria-label="Slide 6"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./IMG/concentrate.jpg"
+                    height="250"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./IMG/face.jpg"
+                    height="250"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./IMG/girl.jpg"
+                    height="250"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./IMG/meeting.png"
+                    height="250"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./IMG/table.jpg"
+                    height="250"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./IMG/headphones.jpg"
+                    height="250"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleFade"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6 text-start">
+            <p class="red fw-bold">CLASSROOM ESSENTIALS</p>
+            <h2 class="fw-bold formal">Checklist ✔</h2>
+            <p>
+              <i
+                class="bi bi-check2-circle"
+                style="color: red; font-size: 1.5rem"
+              ></i>
+              Personal Computer Is Required (Laptop only)
+            </p>
+            <p>
+              <i
+                class="bi bi-check2-circle"
+                style="color: red; font-size: 1.5rem"
+              ></i>
+              Internet Connection (4G MIFI Recommended)
+            </p>
+            <p>
+              <i
+                class="bi bi-check2-circle"
+                style="color: red; font-size: 1.5rem"
+              ></i>
+              Headset and Dedicated Learning Space
+            </p>
+            <p>
+              <i
+                class="bi bi-check2-circle"
+                style="color: red; font-size: 1.5rem"
+              ></i>
+              Tech Skool Kit (Issued on Enrollment)
+            </p>
           </div>
         </div>
       </div>
