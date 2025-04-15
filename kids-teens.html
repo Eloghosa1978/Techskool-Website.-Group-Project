@@ -49,6 +49,10 @@
         transition: ease-in-out 0.2s;
         color: white;
       }
+      .greg {
+        background-color: #f8f9fa;
+        padding: 20px 0;
+      }
       .inc {
         font-size: 23px;
       }
@@ -71,7 +75,7 @@
       }
       .formal {
         color: #242f58;
-        font-size: 40px;
+        font-size: 35px;
       }
       .vero {
         background-color: ghostwhite;
@@ -93,6 +97,38 @@
       .hic:hover {
         border: 1px solid grey;
         transition: ease-out 0.3s;
+      }
+      #pomp {
+        background-color: #17224b;
+        color: white;
+      }
+      #pomp a {
+        text-decoration: none;
+        color: white;
+      }
+      #ell {
+        background-color: white;
+      }
+      .clop {
+        background: white;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      #gret{
+        background-color: #17224b;
+        margin: -15px;
+        padding: 20px;
+        color: white;
+        width: calc(100% + 30px);
+        border-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      #gret a{
+        text-decoration: none;
+        color: white;
+        width: 150%;
       }
     </style>
   </head>
@@ -192,7 +228,7 @@
         </div>
       </div>
     </nav>
-    <section class="my-5">
+    <section class="my-5 bg-body-tertiary">
       <div class="container-lg p-4 vero">
         <div class="row justify-content-center align-items-center">
           <div class="col-md-6 text-sm-center text-md-start">
@@ -238,53 +274,41 @@
           <button id="nope">Watch Project Presentations</button>
         </div>
         <div class="row my-5 justify-content-center align-items-center">
-          <div class="col-md-4">
-            <div class="card hic">
+          <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+            <div class="card hic" style="width: 18rem;">
               <div class="card-body">
                 <h5 class="card-title flora fw-bold">
-                  <span class="badge tether"
-                    ><i class="bi bi-person-circle"></i
-                  ></span>
+                  <span class="badge tether"><i class="bi bi-person-circle"></i></span>
                   Who Can Enroll
                 </h5>
                 <p class="card-text">
-                  Admissions is open for Kids and Teens within 7-17 Years. If
-                  the live class schedules are favorable you can join from any
-                  part of the world.
+                  Admissions are open for Kids and Teens within 7-17 Years. If the live class schedules are favorable, you can join from any part of the world.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card hic">
+          <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+            <div class="card hic" style="width: 18rem;">
               <div class="card-body">
                 <h5 class="card-title flora fw-bold">
-                  <span class="badge tether"
-                    ><i class="bi bi-clock-fill"></i
-                  ></span>
+                  <span class="badge tether"><i class="bi bi-clock-fill"></i></span>
                   Learning Schedule
                 </h5>
                 <p class="card-text">
-                  Learning is self-paced & monitored. Learners get video-based
-                  lessons during weekdays and a compulsory Live class on
-                  Saturdays.
+                  Learning is self-paced & monitored. Learners get video-based lessons during weekdays and a compulsory Live class on Saturdays.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card hic">
+          <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+            <div class="card hic" style="width: 18rem;">
               <div class="card-body">
                 <h5 class="card-title flora fw-bold">
-                  <span class="badge tether"
-                    ><i class="bi bi-shield-shaded"></i
-                  ></span>
+                  <span class="badge tether"><i class="bi bi-shield-shaded"></i></span>
                   Classroom Style
                 </h5>
                 <p class="card-text">
-                  We designed a safe and interactive online classroom and campus
-                  for our learners to explore, learn, and collaborate from
-                  anywhere.
+                  We designed a safe and interactive online classroom and campus for our learners to explore, learn, and collaborate from anywhere.
                 </p>
               </div>
             </div>
@@ -294,8 +318,8 @@
     </section>
     <section class="my-5">
       <div class="contaner-lg">
-        <div class="row justify-content-around align-items-center">
-          <div class="col-md-4">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-4 g">
             <div id="carouselExampleFade" class="carousel slide carousel-fade">
               <div class="carousel-indicators">
                 <button
@@ -415,7 +439,10 @@
           </div>
           <div class="col-md-6 text-start">
             <p class="red fw-bold">CLASSROOM ESSENTIALS</p>
-            <h2 class="fw-bold formal">Checklist ✔</h2>
+            <h2 class="fw-bold formal">
+              Checklist
+              <i class="bi bi-check-square-fill" style="color: green"></i>
+            </h2>
             <p>
               <i
                 class="bi bi-check2-circle"
@@ -444,6 +471,47 @@
               ></i>
               Tech Skool Kit (Issued on Enrollment)
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="my-5 greg">
+      <div class="container-lg">
+        <div class="row justify-content-around align-items-center">
+          <div class="col-md-5  text-sm-center text-md-start">
+            <h2 class="formal fw-bold">Curriculum & Approach</h2>
+            <p>
+              At Tech Skool, we understand that everyone has different interests
+              and needs. That’s why we strive to provide a diverse selection of
+              Tech Courses that are tailored to specific interests. However, our
+              Business Design and Entrepreneurship Course is a required course
+              for all learners, as it covers general topics.
+            </p>
+            <p>
+              Our courses for kids and teens follow a termly model and are
+              offered as a co-curricular activity to complement the existing
+              academic curriculum provided by their traditional schools. This
+              approach ensures that neither the learners nor their parents feel
+              overburdened by the classroom schedule.
+            </p>
+            <p>
+              Our courses are accelerated and can be completed in one learning
+              session and at the end of the course the learners undergo a Junior
+              Internship, competition, and project showcase to consummate the
+              course.
+            </p>
+          </div>
+          <div class="col-md-5 h-auto clop">
+            <div id="gret">
+              <h2>Featured Courses</h2>
+              <a href="#">Explore Courses <i class="bi bi-arrow-up-right"></i></a>
+            </div>  
+              <p class="mt-4"><i class="bi bi-check-circle-fill" style="color: red; font-size: 1.3rem;"></i> Digital Literacy and Office Productivity Foundations</p>
+              <p><i class="bi bi-check-circle-fill" style="color: red; font-size: 1.3rem;"></i> Software Engineering Basics: HTML, CSS and JavaScript</p>
+              <p><i class="bi bi-check-circle-fill" style="color: red; font-size: 1.3rem;"></i> Software Engineering Frontend: React</p>
+              <p><i class="bi bi-check-circle-fill" style="color: red; font-size: 1.3rem;"></i> Software Engineering Backend: NodeJS</p>
+              <p><i class="bi bi-check-circle-fill" style="color: red; font-size: 1.3rem;"></i> Data Analytics: Basics & Advanced</p>
+              <p><i class="bi bi-check-circle-fill" style="color: red; font-size: 1.3rem;"></i> Business Design Course</p>
           </div>
         </div>
       </div>
