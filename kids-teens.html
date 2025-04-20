@@ -16,8 +16,25 @@
       .big {
         font-size: 45px;
       }
+      #yeoman {
+        padding: 6px 20px;
+        font-size: 16px;
+        border: 2px solid #17224b;
+        color: #17224b;
+        font-weight: 600;
+        background-color: white;
+      }
+      #yeoman:hover {
+        color: red;
+        border: 2px solid red;
+        transition: ease-out 0.4s;
+      }
       .dropped:hover .droppee {
         display: block;
+      }
+      .accordion-container {
+        max-width: 700px;
+        width: 100%;
       }
       .comp a:hover {
         color: red;
@@ -27,10 +44,18 @@
         color: red;
         transition: ease-in-out 0.3s;
       }
+      .clomp {
+        color: #242f58;
+        font-weight: 600;
+        font-size: 16px;
+      }
       .tether {
         background-color: red;
         color: white;
         padding: 10px;
+      }
+      .kol {
+        font-weight: 600;
       }
       #uno {
         color: #242f58;
@@ -44,10 +69,20 @@
         background-color: #242f58;
         color: white;
       }
+      #bob {
+        color: white;
+        background-color: red;
+        border: 1px solid red;
+        padding: 7px 10px;
+        border-radius: 2px;
+      }
       .vem:hover {
         background-color: #575c6d;
         transition: ease-in-out 0.2s;
         color: white;
+      }
+      .corl {
+        border: 1px solid gray;
       }
       .greg {
         background-color: #f8f9fa;
@@ -72,6 +107,12 @@
         border: 1px solid #242f58;
         padding: 6px;
         border-radius: 2px;
+      }
+      #nope:hover {
+        background-color: #575c6d;
+        color: white;
+        border: 1px solid #575c6d;
+        transition: ease-in-out 0.2s;
       }
       .formal {
         color: #242f58;
@@ -115,7 +156,7 @@
         padding: 15px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
-      #gret{
+      #gret {
         background-color: #17224b;
         margin: -15px;
         padding: 20px;
@@ -125,7 +166,7 @@
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
       }
-      #gret a{
+      #gret a {
         text-decoration: none;
         color: white;
         width: 150%;
@@ -176,7 +217,6 @@
               <ul class="dropdown-menu droppee">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a class="dropdown-item" href="#">Something else here</a>
                 </li>
@@ -195,10 +235,6 @@
               <ul class="dropdown-menu droppee">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
               </ul>
             </li>
             <li class="nav-item dropdown dropped">
@@ -214,7 +250,6 @@
               <ul class="dropdown-menu droppee">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a class="dropdown-item" href="#">Something else here</a>
                 </li>
@@ -271,44 +306,56 @@
             we provide entry-level to professional-level work experience for our
             learners, positioning them for a winning future.
           </p>
-          <button id="nope">Watch Project Presentations</button>
+          <button id="nope" class="">Watch Project Presentations</button>
         </div>
-        <div class="row my-5 justify-content-center align-items-center">
+        <div class="row my-5 justify-content-center g-2 align-items-center">
           <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-            <div class="card hic" style="width: 18rem;">
+            <div class="card hic" style="width: 18rem">
               <div class="card-body">
                 <h5 class="card-title flora fw-bold">
-                  <span class="badge tether"><i class="bi bi-person-circle"></i></span>
+                  <span class="badge tether"
+                    ><i class="bi bi-person-circle"></i
+                  ></span>
                   Who Can Enroll
                 </h5>
                 <p class="card-text">
-                  Admissions are open for Kids and Teens within 7-17 Years. If the live class schedules are favorable, you can join from any part of the world.
+                  Admissions are open for Kids and Teens within 7-17 Years. If
+                  the live class schedules are favorable, you can join from any
+                  part of the world.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-            <div class="card hic" style="width: 18rem;">
+            <div class="card hic" style="width: 18rem">
               <div class="card-body">
                 <h5 class="card-title flora fw-bold">
-                  <span class="badge tether"><i class="bi bi-clock-fill"></i></span>
+                  <span class="badge tether"
+                    ><i class="bi bi-clock-fill"></i
+                  ></span>
                   Learning Schedule
                 </h5>
                 <p class="card-text">
-                  Learning is self-paced & monitored. Learners get video-based lessons during weekdays and a compulsory Live class on Saturdays.
+                  Learning is self-paced & monitored. Learners get video-based
+                  lessons during weekdays and a compulsory Live class on
+                  Saturdays.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-            <div class="card hic" style="width: 18rem;">
+            <div class="card hic" style="width: 18rem">
               <div class="card-body">
                 <h5 class="card-title flora fw-bold">
-                  <span class="badge tether"><i class="bi bi-shield-shaded"></i></span>
+                  <span class="badge tether"
+                    ><i class="bi bi-shield-shaded"></i
+                  ></span>
                   Classroom Style
                 </h5>
                 <p class="card-text">
-                  We designed a safe and interactive online classroom and campus for our learners to explore, learn, and collaborate from anywhere.
+                  We designed a safe and interactive online classroom and campus
+                  for our learners to explore, learn, and collaborate from
+                  anywhere.
                 </p>
               </div>
             </div>
@@ -438,7 +485,7 @@
             </div>
           </div>
           <div class="col-md-6 text-start">
-            <p class="red fw-bold">CLASSROOM ESSENTIALS</p>
+            <p class="red my-3">CLASSROOM ESSENTIALS</p>
             <h2 class="fw-bold formal">
               Checklist
               <i class="bi bi-check-square-fill" style="color: green"></i>
@@ -478,7 +525,7 @@
     <section class="my-5 greg">
       <div class="container-lg">
         <div class="row justify-content-around align-items-center">
-          <div class="col-md-5  text-sm-center text-md-start">
+          <div class="col-md-5 text-sm-center text-md-start">
             <h2 class="formal fw-bold">Curriculum & Approach</h2>
             <p>
               At Tech Skool, we understand that everyone has different interests
@@ -504,14 +551,286 @@
           <div class="col-md-5 h-auto clop">
             <div id="gret">
               <h2>Featured Courses</h2>
-              <a href="#">Explore Courses <i class="bi bi-arrow-up-right"></i></a>
-            </div>  
-              <p class="mt-4"><i class="bi bi-check-circle-fill" style="color: red; font-size: 1.3rem;"></i> Digital Literacy and Office Productivity Foundations</p>
-              <p><i class="bi bi-check-circle-fill" style="color: red; font-size: 1.3rem;"></i> Software Engineering Basics: HTML, CSS and JavaScript</p>
-              <p><i class="bi bi-check-circle-fill" style="color: red; font-size: 1.3rem;"></i> Software Engineering Frontend: React</p>
-              <p><i class="bi bi-check-circle-fill" style="color: red; font-size: 1.3rem;"></i> Software Engineering Backend: NodeJS</p>
-              <p><i class="bi bi-check-circle-fill" style="color: red; font-size: 1.3rem;"></i> Data Analytics: Basics & Advanced</p>
-              <p><i class="bi bi-check-circle-fill" style="color: red; font-size: 1.3rem;"></i> Business Design Course</p>
+              <a href="#"
+                >Explore Courses <i class="bi bi-arrow-up-right"></i
+              ></a>
+            </div>
+            <p class="mt-4">
+              <i
+                class="bi bi-check-circle-fill"
+                style="color: red; font-size: 1.3rem"
+              ></i>
+              Digital Literacy and Office Productivity Foundations
+            </p>
+            <p>
+              <i
+                class="bi bi-check-circle-fill"
+                style="color: red; font-size: 1.3rem"
+              ></i>
+              Software Engineering Basics: HTML, CSS and JavaScript
+            </p>
+            <p>
+              <i
+                class="bi bi-check-circle-fill"
+                style="color: red; font-size: 1.3rem"
+              ></i>
+              Software Engineering Frontend: React
+            </p>
+            <p>
+              <i
+                class="bi bi-check-circle-fill"
+                style="color: red; font-size: 1.3rem"
+              ></i>
+              Software Engineering Backend: NodeJS
+            </p>
+            <p>
+              <i
+                class="bi bi-check-circle-fill"
+                style="color: red; font-size: 1.3rem"
+              ></i>
+              Data Analytics: Basics & Advanced
+            </p>
+            <p>
+              <i
+                class="bi bi-check-circle-fill"
+                style="color: red; font-size: 1.3rem"
+              ></i>
+              Business Design Course
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="my-5 text-center">
+      <p class="red">ENROLL A LEARNER</p>
+      <h2 class="big my-4 reach">
+        Enrolments And <br />
+        Payment Options
+      </h2>
+      <p>
+        Kindly select the option that best describes your <br />
+        child or contact us for more information.
+      </p>
+      <button id="yeoman">Chat With Us <i class="bi bi-whatsapp"></i></button>
+      <div class="container-lg my-4">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+            <div class="card corl text-center">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <i class="bi bi-clock-history" style="font-size: 1.6rem"></i>
+                </h4>
+                <p class="lead kol">New Learners</p>
+                <p>
+                  Learners not currently in any <br />
+                  of our active programs
+                </p>
+                <a href="#" class="text-decoration-none clomp"
+                  >Click Here <i class="bi bi-arrow-up-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+            <div class="card corl text-center">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <i class="bi bi-bezier2" style="font-size: 1.6rem"></i>
+                </h4>
+                <p class="lead kol">Active Learners</p>
+                <p>
+                  Learners involved in one or <br />
+                  more active progrmas
+                </p>
+                <a href="#" class="text-decoration-none clomp"
+                  >Click Here <i class="bi bi-arrow-up-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="my-5 text-center">
+      <h2 class="big reach">Reviews And Highlights</h2>
+      <p class="lead fw-normal">
+        Watch What Parents Are Saying About Tech Skool
+      </p>
+      <button class="mb-4" id="bob">Watch More</button><br />
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/weHLwWhdX_o?si=AjhL2A_Mo_CM4-3_"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <section class="my-4">
+      <h2 class="big reach my-5 text-center">Common Questions</h2>
+      <div class="accordion-container mx-auto">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                What online protection measures are in place for the learners'
+                safety?
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionPanelsStayOpenExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  We get this question all the time from parents who are
+                  concerned about the online protection and security of their
+                  children, especially with the world’s information (good and
+                  bad) now at their fingertips.
+                </p>
+                <p>
+                  Upon sign-up, we issue a Tech Skool account to the learners.
+                  This account has been programmed to customize the learner’s
+                  browsing experience and tailor learning; this enables the
+                  learner to focus on the program without having to deal with
+                  online Ads or surfing for mature/irrelevant content online.
+                  With this parents can relax and allow the kids to learn
+                  knowing the program has been tailored with the best
+                  technology.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo"
+              >
+                What happens when payment is completed?
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionPanelsStayOpenExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  Once payment is completed for the learner’s summer/program
+                  Kit, the next steps and guide to complete the onboarding
+                  process will be sent via email followed by a confirmation SMS.
+                  Stay tuned we are with you every step of the way.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseThree"
+              >
+                How will a learner qualify for Junior internships?
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionPanelsStayOpenExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  At Tech Skool, we provide junior internships to our learners
+                  where they can gain real-life work experience by working with
+                  companies from all around the globe.
+                </p>
+                <p>
+                  To be eligible for this program, the learners must be enrolled
+                  in our progressive/ongoing learning sessions and should have
+                  completed at least 2 terms of their chosen course. The
+                  participation in this program will be based on the learner’s
+                  performance.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseFour"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseFour"
+              >
+                What payment methods can I use?
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionPanelsStayOpenExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  All payments on for this program are made in USD using your
+                  Visa or Master Card, and you may also choose any other
+                  suitable payment method from any of the available options
+                  given on the prompt.
+                </p>
+                <p>
+                  All payments are processed by our secured payment partner
+                  ‘Paystack’.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseFive"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseFive"
+              >
+                How is the content delivered?
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionPanelsStayOpenExample"
+            >
+              <div class="accordion-body">
+                Live Classes are delivered virtually using Google Meet and all
+                live classes are recorded for replay. off-live classroom
+                engagements including quizzes, hands-on projects, and learner’s
+                chat sessions are all administered, controlled, and assessed
+                using our secured Technology.
+              </div>
+            </div>
           </div>
         </div>
       </div>
