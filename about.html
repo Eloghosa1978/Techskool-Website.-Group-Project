@@ -138,7 +138,6 @@
             font-size: 24px;
             color: #333;
         }
-        <style>
     h1 {
         color: blue;
         font-weight: bold;
@@ -148,6 +147,92 @@
         color: black;
         text-align: center;
     }
+    .title {
+    color: darkblue;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subtitle {
+    color: black;
+    text-align: center;
+}.centered-text {
+    text-align: center;
+    margin: 20px; /* Adds spacing around the text block */
+}
+
+.highlight {
+    color: darkblue;
+    font-weight: bold;
+    font-size: 24px; /* Slightly larger text for emphasis */
+    margin-bottom: 10px;
+}
+
+.description {
+    color: black;
+    font-size: 18px; /* Standard readable size */
+    line-height: 1.5;
+}
+.centered-text {
+    text-align: center;
+    margin-bottom: 20px; /* Spacing under the text block */
+}
+
+
+.schools-container {
+    display: flex;
+    justify-content: center; /* Centers the images horizontally */
+    gap: 15px; /* Space between images */
+    flex-wrap: wrap; /* Allows images to wrap to the next line if needed */
+    margin-top: 20px;
+}
+
+.schools-container img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.schools-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+.partner-box {
+    text-align: center;
+    background: linear-gradient(to bottom, red, darkblue);
+    padding: 200px;
+    border-radius: 10px;
+    color: white;
+    width: 1480px;
+    margin: auto;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.info-text {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 20px 200px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
     </style>
 </head>
 <body>
@@ -214,7 +299,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="https://techskool.eskoolnow.com/wp-content/uploads/2022/03/Tech-Skool-Illustrations-2-1024x683.png" width="660px" alt="Tech Skool Illustration">
+                <img src="https://techskool.eskoolnow.com/wp-content/uploads/2022/03/Tech-Skool-Illustrations-2-1024x683.png" width="440px" alt="Tech Skool Illustration">
             </div>
         </div>
     </section>
@@ -280,6 +365,35 @@
                 <img src="https://www.techskool.org/wp-content/uploads/2025/03/Joshua-Ogbonnia-Founder-Tech-Skool-Educational-Institution.png" alt="Tech Skool Illustration" class="img-fluid" style="border-radius: 8px;">
             </div>
         </div>
+            <title>Tech Skool</title>
+            <link rel="stylesheet" type="text/css" href="styles.css">
+
+            <h1 class="title">Why Tech Skool?</h1>
+            <p class="subtitle">We are Uniquely Positioned to Achieve Max Impact</p>
+        </body><title>Tech Skool</title>
+        <title>Tech Skool</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        
+        <body>
+            <div class="row">
+                <div class="col box">
+                    <img src="machine-icon.png" alt="Machine Icon" class="icon">
+                    <h2>EXPERIENCE</h2>
+                    <p>We offer full-time online campus/school experience and administrative processes.</p>
+                </div>
+                <div class="col box">
+                    <i class="bi bi-bar-chart-fill icon"></i> <!-- Bootstrap icon for outcomes -->
+                    <h2>OUTCOMES</h2>
+                    <p>We develop best curriculum designs and strategies to impart project-based lessons.</p>
+                </div>
+                <div class="col box">
+                    <i class="bi bi-box-arrow-in-right icon"></i> <!-- Bootstrap icon for delivery -->
+                    <h2>DELIVERY</h2>
+                    <p>A blend of Video-based lessons plus virtual interactive classrooms, and assessments.</p>
+                </div>
+            </div>
+        </body>        
     </section>
     <div class="container-fluid mt-4 ">
         <div class="justify-content-center text-center my-4 mb-5">
@@ -287,11 +401,29 @@
           <p class="p lead">Watch What Parents Are Saying About Techskool</p>
   
           <iframe width="853" height="480" src="https://www.youtube.com/embed/0hNo7xrQ6YA" title="Tech Summer Highlights and Reviews" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen  style=" min-width: 40vw; min-height: 30vh; max-width: 80vw; max-height: 50vh; height: 20pc;"></iframe>
+        
+              <div class="centered-text">
+                  <h2 class="highlight">Recognized & Trusted</h2>
+                  <p class="description">We are trusted by so many institutions across borders.</p>
+              </div>
+              <div class="schools-container">
+                  <img src="https://eskoolnow.com/wp-content/uploads/2022/03/Divine-Royal-International-College-Nkpor-with-E-Skool-Now-300x300.png" alt="Divine Royal International College">
+                  <img src="https://eskoolnow.com/wp-content/uploads/2022/03/Great-Goldmine-Academy-with-E-Skool-Now-300x300.png" alt="Great Goldmine Academy">
+                  <img src="https://eskoolnow.com/wp-content/uploads/2022/03/Regent-College-with-E-Skool-Now-300x300.png" alt="Regent College">
+                  <img src="https://eskoolnow.com/wp-content/uploads/2022/03/Regent-Schools-with-E-Skool-Now-300x300.png" alt="Regent Schools">
+              </div>
         </div>
-      </div>
-    </section>
-  
-    <!-- Bootstrap JS -->
+        <div class="partner-box">
+            <div class="heading">Partner With Tech Skool</div>
+            <div class="info-text">
+                Join our partner program and Enjoy many Advantages. <br>
+                For Schools and other Edu or Tech Based institutions.
+            </div>
+            <a href="#" class="cta-button">GET STARTED</a>
+        </div>
+        
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
