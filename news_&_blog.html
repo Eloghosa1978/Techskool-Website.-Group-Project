@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+
+    <style>
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        .bc{
+            color: rgb(33, 33, 73);
+        }
+        .pc{
+          color: rgb(43, 33, 73);
+        }
+        .h:hover{
+            background-color: rgb(33, 33, 73);
+            border: transparent;
+            height: 38px;
+        }
+        .hi{
+          border: 1px solid rgb(33, 33, 73);
+          color: rgb(33, 33, 73);
+          font-weight: 400;
+        }
+        .nav-item.dropdown:hover .dropdown-menu{
+            display: block;
+        }
+        .size{
+          max-width: 450px;
+          min-width: 20px;
+          height:70vh;
+        }
+        .link{
+          text-decoration: none;
+          word-spacing: 2px;
+        }
+        .over{
+          overflow-y: auto;
+          max-width: 450px;
+          min-width: 320px;
+          gap: 50px;
+        }
+        .lin:hover{
+          color: red;
+          transition: ease 0.5s;
+        }
+        a:active{
+            color: blue;
+        }
+        .hov{
+          transition: all 0.5s;
+        }
+        .hov:hover{
+          color: rgb(226, 166, 37);
+          cursor: pointer;
+        }
+        .dot{
+          width: 10px;
+          height: 10px;
+          padding: px;
+          background-color: rgb(33, 33, 73);
+          border-radius: 500%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary p-3">
+        <div class="container-lg">
+          <a class="navbar-brand" href="#"><img src="./IMG/Tech-Skool-Education-Colored-Logo.webp" alt="" class="img-fluid" style="max-width: 150px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+             <ul class="navbar-nav mb-2 mb-lg-0">
+               <li class="nav-item">
+                 <a class="nav-link active lin" aria-current="page" href="#intro fw-bold">Home</a>
+               </li>
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    About
+                 </a>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="#">Action</a></li>
+                   <li><a class="dropdown-item" href="#">Another action</a></li>
+                   <li><hr class="dropdown-divider"></li>
+                   <li><a class="dropdown-item" href="news_&_blog.html">News and Blog</a></li>
+                 </ul>
+               </li>
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     School
+                 </a>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="#">Action</a></li>
+                   <li><a class="dropdown-item" href="#">Another action</a></li>
+                   <li><hr class="dropdown-divider"></li>
+                   <li><a class="dropdown-item" href="#">Something else here</a></li>
+                 </ul>
+               </li>
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Programs
+                 </a>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="#">Action</a></li>
+                   <li><a class="dropdown-item" href="#">Another action</a></li>
+                   <li><hr class="dropdown-divider"></li>
+                   <li><a class="dropdown-item" href="#">Something else here</a></li>
+                 </ul>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link fw-bold" href="#">Contact</a>
+               </li>
+             </ul>
+             <a href="#" class="btn btn-danger lg h fw-bolder p-2">Enroll Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!---Intro-->
+    <section class="container-fluid mt-5 py-5">
+        <main class="text-center bc mt-4 mt-sm-0">
+            <h1 class="fw-bold display-1 mb-3">News & Blog</h1>
+            <h4 ><a href="index.html" class="bc">Home</a> / News and Blog</h4>
+        </main>
+    </section>
+
+    <!----News Section-->
+    <section class="container-fluid mt-3">
+        <article class="justify-content-around row">
+          <div class="col-11 col-lg-4 mt-lg-0">
+            <div class="card border-0 shadow-sm ">
+              <header>
+                <img src="./IMG/Team-Tech-Skool-Wins-at-STEM-Festival-PH-2024-768x402.png" alt="" style="width: 100%;">
+              </header>
+              <div class="card-body text-block py-4 px-3 bg-light" >
+                <p class="fw-bold" style="color: red;">NEWS <span class="text-dark">|</span> PRESS RELEASE</p>
+
+                <a class="fw-bolder card-title display-3 bc hov" style="text-decoration: none; ;">Tech Skool Wins Coding Competition at STEM Festival PH 2024</a>
+
+                <p class=" my-3 ">By Tech Skool. July 31, 2024</p>
+                <p class="lead fw-bold">We are ecstatic to announce that Tech Skool Education has emerged as the champion in the Coding Category (Software Engineering)…</p>
+
+                <a href="#" class="btn bc lin" style="font-weight: 700; font-size: large;">Enroll Now <i class="bi bi-arrow-right" style="font-size: 25px; "></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!--April 2024 news letter-->
+          <div class="col-11 col-lg-4 mt-lg-0 mt-5">
+            <div class="card border-0 shadow-sm ">
+              <header>
+                <img src="./IMG/Tech-Skool-Education-Newsletter-768x402.png" alt="" style="width: 100%;">
+              </header>
+              <div class="card-body text-block py-4 px-3 bg-light" >
+                <p class="fw-bold" style="color: red;">NEWS LETTER</p>
+
+                <a class="fw-bolder card-title display-3 bc hov" style="text-decoration: none; ;">April 2024 Termly Newsletter</a>
+
+                <p class=" my-3 ">By Tech Skool. April 6, 2024</p>
+                <p class="lead fw-bold">Dear Tech Skool Community, As we wrap the 2nd term and 1st term of the October 2023 and January 2024…</p>
+                
+                <a href="#" class="btn bc lin" style="font-weight: 700; font-size: large;">Enroll Now <i class="bi bi-arrow-right" style="font-size: 25px; "></i></a>
+              </div>
+            </div>
+          </div>
+          <!---OPSAN ENDORSES TECHSKOOL-->
+          <div class="col-11 col-lg-4 mt-lg-0 mt-5">
+            <div class="card border-0 shadow-sm ">
+              <header>
+                <img src="./IMG/Owners-of-Private-Schools-Association-of-Nigeria-OPSAN-Endorses-Tech-Skool-Edu-Blue-768x402.png" alt="" style="width: 100%;">
+              </header>
+              <div class="card-body text-block py-4 px-3 bg-light" >
+                <p class="fw-bold" style="color: red;">NEWS</p>
+
+                <a class="fw-bolder card-title display-3 bc hov" style="text-decoration: none; ;">OPSAN Endorse Tech Skool Edu</a>
+
+                <p class=" my-3 ">By Tech Skool. November 20, 2022</p>
+                <p class="lead fw-bold">On the 18th of November 2022, Tech Skool Education: a member of E Skool Now Group received an official endorsement…</p>
+                
+                <a href="#" class="btn bc lin" style="font-weight: 700; font-size: large;">Enroll Now <i class="bi bi-arrow-right" style="font-size: 25px; "></i></a>
+              </div>
+            </div>
+          </div>
+        </article>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
