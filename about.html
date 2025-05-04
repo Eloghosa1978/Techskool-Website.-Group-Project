@@ -4,7 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Tech Skool</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
     <style>
+            *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .bc{
+        color: rgb(33, 33, 73);
+    }
+    .pc{
+      color: rgb(43, 33, 73);
+    }
+    .h:hover{
+        background-color: rgb(33, 33, 73);
+        border: transparent;
+        height: 38px;
+    }
+    .hi{
+      border: 1px solid rgb(33, 33, 73);
+      color: rgb(33, 33, 73);
+      font-weight: 400;
+    }
+    .nav-item.dropdown:hover .dropdown-menu{
+        display : block;
+    }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -15,24 +43,20 @@
 
         /* About Section */
         .about-section {
-            display: flex;
-            align-items: center;
-            justify-content: center; /* Centers the section horizontally */
             margin-top: 100px;
             padding: 20px;
         }
 
         .about-text {
-            flex: 1;
             text-transform: uppercase;
-            font-size: 36px;
+            font-size: 2rem;
             font-weight: bold;
             color: #0044cc;
         }
 
-        .about-image {
-            flex: 1;
-            text-align: right;
+        .about-description {
+            font-size: 1.2rem;
+            margin-top: 10px;
         }
 
         .about-image img {
@@ -41,26 +65,441 @@
             border-radius: 8px;
         }
 
-        .plain-section {
-            margin-top: 50px; 
-            font-size: 24px; 
-            font-weight: normal;
+        /* Boxes Styling */
+        .box {
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #0044cc;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Custom Colors for Headers */
+        .mission-header {
+            color: #0044cc; /* Dark Blue */
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .vision-header {
+            color: #ffc107; /* Yellow */
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .approach-header {
+            color: #dc3545; /* Red */
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .icon {
+            font-size: 40px;
+            color: #0044cc;
+        }
+
+        /* Company Brief Styling */
+        .company-brief {
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-align: left; /* Align text to the left */
+            max-width: 50%; /* Limit the width to left side */
+            margin-top: 20px;
+        }
+
+        .company {
+            color: #0044cc; /* Blue */
+            font-weight: bold;
+        }
+
+        .brief {
+            color: #dc3545; /* Red */
+            font-weight: bold;
+        }
+
+        /* Grey Box Styling */
+        .grey-box {
+            background-color: #d3d3d3; /* Light grey */
+            padding: 40px;
+            border-radius: 8px;
+            position: relative; /* For file icon placement */
+        }
+
+        .grey-box-icon {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 24px;
             color: #333;
         }
+    h1 {
+        color: blue;
+        font-weight: bold;
+        text-align: center;
+    }
+    p {
+        color: black;
+        text-align: center;
+    }
+    .title {
+    color: darkblue;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subtitle {
+    color: black;
+    text-align: center;
+}.centered-text {
+    text-align: center;
+    margin: 20px; /* Adds spacing around the text block */
+}
+
+.highlight {
+    color: darkblue;
+    font-weight: bold;
+    font-size: 24px; /* Slightly larger text for emphasis */
+    margin-bottom: 10px;
+}
+
+.description {
+    color: black;
+    font-size: 18px; /* Standard readable size */
+    line-height: 1.5;
+}
+.centered-text {
+    text-align: center;
+    margin-bottom: 20px; /* Spacing under the text block */
+}
+
+
+.schools-container {
+    display: flex;
+    justify-content: center; /* Centers the images horizontally */
+    gap: 15px; /* Space between images */
+    flex-wrap: wrap; /* Allows images to wrap to the next line if needed */
+    margin-top: 20px;
+}
+
+.schools-container img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.schools-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+.partner-box {
+    text-align: center;
+    background: linear-gradient(to bottom, red, darkblue);
+    padding: 200px;
+    border-radius: 10px;
+    color: white;
+    width: 1480px;
+    margin: auto;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.info-text {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 20px 200px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* Footer Styling */
+.footer {
+    background-color: #0044cc; /* Deep blue background */
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.footer-links, .footer-courses, .footer-contact {
+    width: 30%;
+}
+
+.footer-links ul, .footer-courses ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a, .footer-courses a, .social-icons a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #00bcd4;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+
+
     </style>
 </head>
 <body>
-    <section class="about-section">
-        <div class="about-text">
-            ABOUT TECH SKOOL EDUCATION
+      <!---Nav bar-->
+
+  <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary ">
+    <div class="container-lg">
+      <a class="navbar-brand" href="#"><img src="./IMG/Tech-Skool-Education-Colored-Logo.webp" alt="" class="img-fluid" style="max-width: 150px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+         <ul class="navbar-nav mb-2 mb-lg-0">
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="#intro fw-bold">Home</a>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="#">Action</a></li>
+               <li><a class="dropdown-item" href="#">Another action</a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="#">Something else here</a></li>
+             </ul>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 School
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="#">Action</a></li>
+               <li><a class="dropdown-item" href="#">Another action</a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="#">Something else here</a></li>
+             </ul>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Programs
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="#">Action</a></li>
+               <li><a class="dropdown-item" href="#">Another action</a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="#">Something else here</a></li>
+             </ul>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link fw-bold" href="#">Contact</a>
+           </li>
+         </ul>
+         <a href="#" class="btn btn-danger lg h fw-bolder p-2">Enroll Now</a>
         </div>
-        <div class="about-image">
-            <img src="https://techskool.eskoolnow.com/wp-content/uploads/2022/03/Tech-Skool-Illustrations-2-1024x683.png" alt="Tech Skool Illustration">
+    </div>
+  </nav>
+    <section class="about-section container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="about-text">ABOUT TECH SKOOL EDUCATION</div>
+                <div class="about-description">
+                    Tech Skool Educational Institution is an institute of Technology and Entrepreneurship education designed to provide wholesome learning experiences for learners of different age groups, providing entry-level to professional-level education and experience in Technology and entrepreneurship skills.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="https://techskool.eskoolnow.com/wp-content/uploads/2022/03/Tech-Skool-Illustrations-2-1024x683.png" width="440px" alt="Tech Skool Illustration">
+            </div>
         </div>
     </section>
 
-    <section class="plain-section">
-        Tech Skool Educational Institution is an institute of Technology and Entrepreneurship education designed to provide wholesome learning experiences for learners of different age groups, providing entry-level to professional-level education and experience in Technology and entrepreneurship skills.
+    <!-- Three Boxes Side by Side -->
+    <section class="box-container container mt-5">
+        <div class="row text-center">
+            <!-- Mission Section -->
+            <div class="col-md-4 mb-3">
+                <div class="box">
+                    <div class="icon"><i class="bi bi-airplane"></i></div> <!-- Airplane symbol -->
+                    <div class="mission-header">MISSION</div>
+                    <p>To deliver sustainable technology and entrepreneurship education, positioning the learners for global economic impact.</p>
+                </div>
+            </div>
+            <!-- Vision Section -->
+            <div class="col-md-4 mb-3">
+                <div class="box">
+                    <div class="icon"><i class="bi bi-pencil"></i></div> <!-- Pencil symbol -->
+                    <div class="vision-header">VISION</div>
+                    <p>To Raise the next generation of tech talents, leaders, and industry captains, for Africa and beyond.</p>
+                </div>
+            </div>
+            <!-- Approach Section -->
+            <div class="col-md-4 mb-3">
+                <div class="box">
+                    <div class="icon"><i class="bi bi-bookmark"></i></div> <!-- Bookmark symbol -->
+                    <div class="approach-header">APPROACH</div>
+                    <p>Innovation and entrepreneurship, and learning outcomes are the drivers and key words, hence our very unique strategies.</p>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section class="container">
+        <div class="row">
+            <!-- Company Brief Section on the Left -->
+            <div class="col-md-6">
+                <div class="company-brief">
+                    <p><span class="company">Company</span> <span class="brief">Brief</span></p>
+                    <p style="font-weight: bold;">
+                        Tech Skool Education was founded in June 2022 as a member of E Skool Now Group by Joshua Ogbonnia. 
+                        We have put intentional structures and processes in place to deliver excellence to our learners with desired outcomes, 
+                        which are transformed societies.
+                    </p>
+                </div>
+                <!-- Grey Box Below the Company Brief -->
+                <div class="grey-box mt-3">
+                    <!-- File Icon -->
+                    <div class="grey-box-icon">
+                        <i class="bi bi-file-earmark"></i>
+                    </div>
+                    <!-- Text and Button -->
+                    <div style="margin-left: 35px; text-align: left;">
+                        <p style="font-weight: bold; margin-bottom: 5px;">About E Skool Now Group</p>
+                        <p style="margin-bottom: 15px;">ESNG is Africa’s Tech Solutions, Education, and Entrepreneurship Partner, catalyzing innovation and empowering world-transforming visions.</p>
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Image on the Right -->
+            <div class="col-md-6">
+                <img src="https://www.techskool.org/wp-content/uploads/2025/03/Joshua-Ogbonnia-Founder-Tech-Skool-Educational-Institution.png" alt="Tech Skool Illustration" class="img-fluid" style="border-radius: 8px;">
+            </div>
+        </div>
+
+            <h1 class="title">Why Tech Skool?</h1>
+            <p class="subtitle">We are Uniquely Positioned to Achieve Max Impact</p>
+        </body><title>Tech Skool</title>
+        <title>Tech Skool</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        
+        <body>
+            <div class="row">
+                <div class="col box">
+                    <i class="bi bi-send-fill"></i>
+                    <h2>EXPERIENCE</h2>
+                    <p>We offer full-time online campus/school experience and administrative processes.</p>
+                </div>
+                <div class="col box">
+                    <i class="bi bi-bar-chart-fill icon"></i> <!-- Bootstrap icon for outcomes -->
+                    <h2>OUTCOMES</h2>
+                    <p>We develop best curriculum designs and strategies to impart project-based lessons.</p>
+                </div>
+                <div class="col box">
+                    <i class="bi bi-box-arrow-in-right icon"></i> <!-- Bootstrap icon for delivery -->
+                    <h2>DELIVERY</h2>
+                    <p>A blend of Video-based lessons plus virtual interactive classrooms, and assessments.</p>
+                </div>
+            </div>
+        </body>        
+    </section>
+    <div class="container-fluid mt-4 ">
+        <div class="justify-content-center text-center my-4 mb-5">
+          <h1 class="bc ">Reviews & Highlights</h1>
+          <p class="p lead">Watch What Parents Are Saying About Techskool</p>
+  
+          <iframe width="853" height="480" src="https://www.youtube.com/embed/0hNo7xrQ6YA" title="Tech Summer Highlights and Reviews" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen  style=" min-width: 40vw; min-height: 30vh; max-width: 80vw; max-height: 50vh; height: 20pc;"></iframe>
+        
+              <div class="centered-text">
+                  <h2 class="highlight">Recognized & Trusted</h2>
+                  <p class="description">We are trusted by so many institutions across borders.</p>
+              </div>
+              <div class="schools-container">
+                  <img src="https://eskoolnow.com/wp-content/uploads/2022/03/Divine-Royal-International-College-Nkpor-with-E-Skool-Now-300x300.png" alt="Divine Royal International College">
+                  <img src="https://eskoolnow.com/wp-content/uploads/2022/03/Great-Goldmine-Academy-with-E-Skool-Now-300x300.png" alt="Great Goldmine Academy">
+                  <img src="https://eskoolnow.com/wp-content/uploads/2022/03/Regent-College-with-E-Skool-Now-300x300.png" alt="Regent College">
+                  <img src="https://eskoolnow.com/wp-content/uploads/2022/03/Regent-Schools-with-E-Skool-Now-300x300.png" alt="Regent Schools">
+              </div>
+        </div>
+        <div class="partner-box">
+            <div class="heading">Partner With Tech Skool</div>
+            <div class="info-text">
+                Join our partner program and Enjoy many Advantages. <br>
+                For Schools and other Edu or Tech Based institutions.
+            </div>
+            <a href="#" class="cta-button">GET STARTED</a>
+        </div>
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="mission">
+                    Raising and positioning Tech talents, Leaders and Industry Captains for Africa and beyond through institutionalized learning experiences for learners of different age groups.
+                </p>
+                
+                <div class="footer-links">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">About Tech Skool</a></li>
+                        <li><a href="#">Enrollment Page</a></li>
+                        <li><a href="#">Parents Summit</a></li>
+                        <li><a href="#">Join the Team</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-courses">
+                    <h3>Tech Skool Programs</h3>
+                    <ul>
+                        <li><a href="#">For Kids & Teens</a></li>
+                        <li><a href="#">For Adults (18+)</a></li>
+                        <li><a href="#">Summer School</a></li>
+                        <li><a href="#">Online Courses</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Reach out or connect with us on socials:</p>
+                    <div class="social-icons">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        
+            <p class="copyright">&copy; 2025 Tech Skool Educational Institution | A Member of ESNG</p>
+        </footer>
+        
+        
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
